@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,7 +22,7 @@ Route::get('/', function () {
 });
 
 
-Route::post('/form_translate', function (Illuminate\Http\Request $request) {
+Route::post('/form_translate', function (Request $request) {
 
     $dictionary = array(
         "dog" => "chó",
